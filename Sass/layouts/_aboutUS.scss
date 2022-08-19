@@ -1,0 +1,27 @@
+.aboutUS {
+    background: linear-gradient(90deg, #d5dbdb, $mainColor);
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+
+    h2 {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .whyUS {
+        font-size: $thirdHeading;
+        padding-top: 30px;
+        text-align: center;
+    }
+    p {
+        padding: 1vh 10%;
+        text-align: left;
+        font-size: $basicParagraf;
+        @include eXSmall{
+            text-align: justify;
+        }
+    }
+}

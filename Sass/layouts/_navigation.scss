@@ -1,0 +1,118 @@
+nav {
+    background: rgba(40, 34, 34, 1);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+
+    .logo {
+        padding: 2vh 0;
+        width: 35%;
+        text-align: center;
+        color: white;
+
+        a {
+            color: white;
+            @include eXSmall {
+                font-size: 0.8em;
+            }
+        }
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 100%;
+        padding: 0 50px;
+        margin: 0;
+
+        @include eXSmall {
+            position: fixed;
+            left: -100%;
+            top: 60px;
+            gap: 0;
+            flex-direction: column;
+            background: rgb(40, 34, 34);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            z-index: 1000;
+
+            &.active {
+                left: 0;
+            }
+        }
+
+        .nav-link {
+            padding: 0 40px;
+            font-size: clamp(1em, 1.1vw, 3rem);
+
+            @include eXSmall {
+                margin: 16px 0;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 0 20px;
+    @include eXSmall {
+        display: block;
+
+        &.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        &.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        &.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+}
+
+
+// nav.sticky{
+
+//     padding: 0px 60px;
+//     position: fixed;
+//     background: rgba(40, 34, 34, 0.8);
+//     transition: 0.2s ease-in-out;
+//     top: 0;
+//     left: 0;
+
+//     & ul li a{
+//         color: green;
+//     }
+
+// }

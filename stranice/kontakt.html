@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../Assets/icons/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e337240c0d.js" crossorigin="anonymous"></script>
+    <script defer src="../js/script.js"></script>
+
+    <title>Metal Pan</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation and logo -->
+        <nav>
+            <div class="logo">
+                <h2><span>Metal</span> Pan</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="../index.html">Početna</a></li>
+                <li class="nav-link"><a href="./galerija.html">Galerija</a></li>
+                <li class="nav-link"><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!--/Navigation and logo -->
+
+
+    </header>
+
+    <main>
+        <!-- Google maps -->
+        <div class="mapa">
+            <iframe width="100%" height="350" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Branka%20Radicevica%2010,%20Djurdjevo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <!-- /Google maps -->
+
+        <!-- Contact form -->
+        <div class="contact">
+            <h2>Kontakt</h2>
+            <p>
+                Metal Pan se nalazi u Đurđevu na adresi Marka Kraljevića 106. Dodjite da se uverite u našu
+                profesionalnost i ljubaznost.
+            </p>
+
+            <div class="contact_field">
+
+
+
+                <form class="form_contact" action="" method="post" novalidate>
+                    <input type="text" placeholder="Vaše ime" required>
+                    <input type="text" placeholder="Vaše prezime" required>
+                    <input type="email" placeholder="email">
+                    <textarea name="poruka" cols="30" rows="10" placeholder='Vaša poruka' required></textarea>
+                    <button class="submit" type="submit">Pošalji poruku</button>
+                </form>
+
+
+                <div class="contact_info">
+                    <p class="contact_info">
+                        <i class="fas fa-mobile" aria-hidden="true"></i> 064/1111111
+                    </p>
+
+                    <p class="contact_info"><i class="fas fa-envelope" aria-hidden="true"></i>
+                        dzambasnatasasara@gmail.com</p>
+
+                    <p class="contact_info"><i class="fas fa-globe" aria-hidden="true"></i> www.metal-pan.rs</p>
+
+                    <p class="contact_info"><i class="fas fa-home" aria-hidden="true"></i> Metal Pan, Marka Kraljevića
+                        106, Đurđevo</p>
+                </div>
+            </div>
+        </div>
+        <!-- /contact form -->
+    </main>
+
+    <footer class="copyright load">
+        <p>&copy; 2022 ALL RIGHTS RESERVED</p>
+        <a href="https://www.facebook.com/sinisa.zekanovic.35" target="_blank" class="fa fa-facebook fa-2x"></a>
+    </footer>
+
+</body>
+
+</html>

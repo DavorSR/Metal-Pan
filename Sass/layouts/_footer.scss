@@ -1,0 +1,28 @@
+.copyright {
+    background: rgb(26, 23, 23);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.7rem, 1.1vw, 2.5rem);
+    font-weight: 900;
+    color: gray;
+
+    p {
+        margin: 25px 80px;
+
+    }
+
+    a{
+        padding: 1vh 1vw;
+        align-self: center;
+        color: #fff;
+
+        &:hover{
+            background-color: white;
+            padding: 1vh 1vw;
+            color: black;
+            transition: 0.2s ease-in;
+            border-radius: 50%;
+        }
+    }
+}

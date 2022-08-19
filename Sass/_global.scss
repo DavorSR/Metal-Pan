@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none!important;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+.load {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  
+    &.fadeIn {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 350ms ease-out;
+        transition-delay: 300ms;
+    }
+}

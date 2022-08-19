@@ -1,0 +1,70 @@
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.5)),
+        url("../Assets/images/header.jpg") no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+    text-align: left;
+    color: white;
+
+    @include landscape{
+        height: 95vh;
+    }
+}
+
+.d-flex {
+    height: 60vh;
+    align-items: center;
+    margin-top: 60px;
+ 
+
+    @include wide {
+        margin-top: 160px;
+    }
+
+   div{
+
+    color: white;
+
+    .mb-3{
+        font-size: $thirdHeading;
+
+    }
+
+    .mb-4{
+        font-size: $mainHeading;
+
+        span{
+            color: $mainColor;
+        }
+    }
+    .moto {
+        font-size: $secondHeading;
+    }
+
+    .mission {
+        font-size: $thirdHeading;
+        font-style: italic;
+        padding: 0.5rem 0 3rem 0;
+        @include landscape{
+            padding: 0;
+        }
+    }
+
+   }
+}
+
+
+
+.btn-outline-light {
+    color: white;
+    font-size: $buttons;
+    background: $mainColor;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+
+    &:hover {
+        background: white;
+        transition: 0.2s ease-in;
+    }
+}

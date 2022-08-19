@@ -1,0 +1,72 @@
+.mapa {
+    padding: 10vh 0;
+}
+
+.contact {
+    padding: 0 5vh;
+
+    h2 {
+        font-size: $secondHeading;
+    }
+
+    p {
+        font-size: $basicParagraf;
+        padding: 3vh 0;
+    }
+}
+
+.contact_field {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    @include eXSmall {
+        flex-direction: column;
+    }
+    @include tablet {
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        @include eXSmall {
+            width: 100%;
+        }
+        @include tablet {
+            width: 100%;
+        }
+
+        input {
+            padding: 1.5vh;
+            margin: 1vh;
+            outline: none;
+            font-size: $basicParagraf;
+        }
+
+        textarea {
+            margin: 1vh;
+            padding: 1.5vh;
+            outline: none;
+            font-size: $basicParagraf;
+        }
+
+        .submit {
+            width: 50%;
+            padding: 1vh 1vw;
+            margin: 1vh auto;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &_info {
+            width: 60%;
+            float: right;
+            @include eXSmall {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
