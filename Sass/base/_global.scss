@@ -14,7 +14,7 @@
   
     &.fadeIn {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
         transition: all 350ms ease-out;
         transition-delay: 300ms;
     }

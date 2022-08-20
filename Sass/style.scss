@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,300;1,400&display=swap");
-@import "vars";
-@import "mixins";
-@import "global";
+@import "abstract/vars";
+@import "abstract/mixins";
+@import "base/global";
 @import "layouts/navigation";
 @import "layouts/slogan";
 @import "layouts/services";

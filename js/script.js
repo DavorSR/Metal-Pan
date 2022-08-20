@@ -1,9 +1,13 @@
-// Hamburger menu
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const gallery = document.querySelectorAll('.gallery img');
+const popup = document.querySelector('.gallery_popup-image');
+const popImg = document.querySelector('.gallery_popup-image img');
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
+
+// Hamburger menu
 
 hamburger.onclick = () => {
     hamburger.classList.toggle("active");
@@ -45,11 +49,6 @@ loadingAnimation();
 
 // Show image modal
 
-const gallery = document.querySelectorAll('.gallery img');
-const popup = document.querySelector('.gallery_popup-image');
-const popImg = document.querySelector('.gallery_popup-image img');
-
-// going through everything element in array 
 
 gallery.forEach((image, index) => {
 
@@ -67,20 +66,6 @@ gallery.forEach((image, index) => {
         let imageIndex = index;
         let next = imageIndex++;
         let prev = imageIndex--;
-
-
-        // const hideShowArrows = (gallery, prevBtn, nextBtn, imageIndex) => {
-        //     if(imageIndex === 0){
-        //         prevBtn.classList.add('is-hidden');
-        //         nextBtn.classList.remove('is-hidden')
-        //     } else if(imageIndex === gallery.length -1){
-        //         prevBtn.classList.remove('is-hidden');
-        //         nextBtn.classList.add('is-hidden')
-        //     } else {
-        //         prevBtn.classList.remove('is-hidden');
-        //         nextBtn.classList.remove('is-hidden');
-        //     }
-        // }
 
         window.addEventListener("keyup", (e) => {
 

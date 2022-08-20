@@ -4,9 +4,7 @@
     width: fit-content;
     margin: 0 auto 40px auto;
     font-size: $secondHeading;
-    @include eXSmall {
-    }
-
+  
     span {
         color: $mainColor;
     }
@@ -20,12 +18,10 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     flex-direction: column;
 
     .card-img-top {
         height: 40%;
-        // width: 100%;
     }
 
     .card-title {

@@ -72,6 +72,8 @@ nav {
     }
 }
 
+// Hamburger menu
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -100,19 +102,3 @@ nav {
         background-color: white;
     }
 }
-
-
-// nav.sticky{
-
-//     padding: 0px 60px;
-//     position: fixed;
-//     background: rgba(40, 34, 34, 0.8);
-//     transition: 0.2s ease-in-out;
-//     top: 0;
-//     left: 0;
-
-//     & ul li a{
-//         color: green;
-//     }
-
-// }
