@@ -13,6 +13,10 @@
     <script defer src="../js/script.js"></script>
 
     <title>Metal Pan</title>
+    <meta name="description" content="kontakt, metal pan, bravarija, hale, gradjevinski radovi" />
+    <meta property="og:url" content="#">
+    <meta name="keywords"
+        content="kontakt, izgradnja, industrijske, hale, kapije, primeri, metalni, krovovi, bravarija, iskop, Novi Sad">
 </head>
 
 <body>
@@ -40,11 +44,10 @@
 
     <main>
         <!-- Google maps -->
-        <div class="mapa">
-            <iframe width="100%" height="350" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Branka%20Radicevica%2010,%20Djurdjevo&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.9434662800545!2d20.058631914968796!3d45.329764050425744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b1f41669f7847%3A0xff7c4eca25c8594e!2zS3JhbGpldmljzIFhIE1hcmthLCDEkHVyxJFldm8sIFNlcmJpYQ!5e0!3m2!1sen!2sus!4v1661006099218!5m2!1sen!2sus"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!-- /Google maps -->
 
         <!-- Contact form -->
@@ -59,11 +62,11 @@
 
 
 
-                <form class="form_contact" action="" method="post" novalidate>
-                    <input type="text" placeholder="Vaše ime" required>
-                    <input type="text" placeholder="Vaše prezime" required>
-                    <input type="email" placeholder="email">
-                    <textarea name="poruka" cols="30" rows="10" placeholder='Vaša poruka' required></textarea>
+                <form class="form_contact" action="/php/contactform.php" method="post">
+                    <input type="text" name="name" placeholder="Vaše ime i prezime" required>
+                    <input type="text" name="subject" placeholder="Naslov" required>
+                    <input type="email" name="email" placeholder="email">
+                    <textarea name="poruka" cols="30" rows="10" name="message" placeholder='Vaša poruka' required></textarea>
                     <button class="submit" type="submit">Pošalji poruku</button>
                 </form>
 

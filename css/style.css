@@ -457,6 +457,22 @@ nav .nav-menu .nav-link a:hover {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media (max-width: 505px) {
+  .gallery_popup-nav {
+    flex-direction: column;
+    top: 30%;
+    bottom: 15%;
+    transform: translate(-50%, -14%);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px), (orientation: portrait) {
+  .gallery_popup-nav {
+    flex-direction: column;
+    top: 30%;
+    bottom: 10%;
+    transform: translate(-50%, -17%);
+  }
+}
 .gallery_popup-nav > button {
   border: 1px solid #fff;
   background-color: transparent;
@@ -465,10 +481,6 @@ nav .nav-menu .nav-link a:hover {
 }
 .gallery_popup-nav > button:hover {
   opacity: 0.7;
-}
-
-.gallery_button img {
-  width: 40px;
 }
 
 .is-hidden {

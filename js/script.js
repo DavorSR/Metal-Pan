@@ -1,9 +1,3 @@
-// window.addEventListener("scroll", function(){
-//     let menu = this.document.querySelector("nav");
-//     menu.classList.toggle("sticky", this.window.scrollY > 0)
-// })
-
-
 // Hamburger menu
 
 const hamburger = document.querySelector(".hamburger");
@@ -61,7 +55,7 @@ gallery.forEach((image, index) => {
 
     popup.style.visibility = 'hidden';
 
-// event listener 
+    // event listener 
 
     image.onclick = () => {
         popup.style.display = 'block';
@@ -125,4 +119,3 @@ document.querySelector('.gallery_popup-image span').onclick = () => {
     popup.style.display = 'none';
 }
 
-// /////////////////////////////////

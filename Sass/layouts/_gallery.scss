@@ -95,28 +95,34 @@
     transform: translate(-50%, -50%);
     width: 100%;
 
+    @include eXSmall {
+        flex-direction: column;
+        top: 30%;
+        bottom: 15%;
+        transform: translate(-50%, -14%);
+    }
+
+    @include tablet {
+        flex-direction: column;
+        top: 30%;
+        bottom: 10%;
+        transform: translate(-50%, -17%);
+    }
+
     & > button {
         border: 1px solid #fff;
         background-color: transparent;
         color: white;
         padding: 10px 25px;
 
-        &:hover{
+        &:hover {
             opacity: 0.7;
         }
-       
     }
-}
-
-
-
-.gallery_button img {
-    width: 40px;
 }
 
 .is-hidden {
     visibility: hidden;
-
 }
 
 .current-slide {
