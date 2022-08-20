@@ -1,5 +1,11 @@
-# SZ-Gradnja
+# Metal Pam
 
-Site made for local construction company. Used HTML, SASS and JS.
+Web Site made for company specialised in manufacturing and setting up industrial halls and metal roofs.
 
-Live version of site can be seen on:https://sz-gradnja.netlify.app/
+Technology used:
+
+- HTML
+- SASS/CSS
+- JavaScript
+- Bootstrap
+- PHP
