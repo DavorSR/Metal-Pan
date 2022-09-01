@@ -20,6 +20,9 @@ nav {
             @include eXSmall {
                 font-size: 0.8em;
             }
+            @media (max-width: 504px) {
+                font-size: 1.4rem;
+            }
             @include landscape {
                 font-size: 0.8em;
             }

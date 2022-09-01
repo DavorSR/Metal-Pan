@@ -10,8 +10,9 @@ $message = $_POST['message'];
 $headers = "From:" . $mailFrom;
 if(mail($mailTo,$subject,$message, $headers)) {
     echo "The email message was sent.";
+    header("Location: https://metal-pan.rs/");
 } else {
-    echo "The email message was not sent.";
+    echo "The email message was not sent. Vratite se na \n"
 }
 
 ?>
