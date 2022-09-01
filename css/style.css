@@ -43,6 +43,11 @@ nav .logo a {
     font-size: 0.8em;
   }
 }
+@media only screen and (max-width: 920px) and (orientation: landscape) {
+  nav .logo a {
+    font-size: 0.8em;
+  }
+}
 nav .logo span {
   color: forestgreen;
 }
@@ -168,7 +173,7 @@ nav .nav-menu .nav-link a:hover {
 
 .btn-outline-light {
   color: white;
-  font-size: clamp(1rem, 1.1vw, 2rem);
+  font-size: clamp(1rem, 1.1vw, 3rem);
   background: forestgreen;
   padding: 10px 50px;
   border-radius: 10px;
@@ -190,6 +195,15 @@ nav .nav-menu .nav-link a:hover {
   color: forestgreen;
 }
 
+.container-xxl {
+  margin: 0 100px;
+}
+@media (max-width: 505px) {
+  .container-xxl {
+    margin: 0;
+  }
+}
+
 .box {
   width: 100%;
   height: 100%;
@@ -203,6 +217,11 @@ nav .nav-menu .nav-link a:hover {
 .box .card-title {
   font-weight: bold;
 }
+@media (min-width: 2160px) {
+  .box .card-title {
+    font-size: 4rem;
+  }
+}
 .box:hover {
   background-color: forestgreen;
   color: white;
@@ -210,6 +229,11 @@ nav .nav-menu .nav-link a:hover {
 }
 .box .card-text {
   padding-bottom: 20px;
+}
+@media (min-width: 2160px) {
+  .box .card-text {
+    font-size: 2.5rem;
+  }
 }
 @media only screen and (max-width: 920px) and (orientation: landscape) {
   .box .card-body p {
@@ -221,6 +245,11 @@ nav .nav-menu .nav-link a:hover {
   position: absolute;
   bottom: 4%;
   left: 4%;
+}
+@media (min-width: 2160px) {
+  .btn-primary {
+    font-size: 3rem;
+  }
 }
 
 .consulting {
@@ -265,10 +294,15 @@ nav .nav-menu .nav-link a:hover {
     padding-bottom: 3vh;
   }
 }
+@media (min-width: 2160px) {
+  .consulting h2 {
+    font-size: 4rem;
+  }
+}
 .consulting a {
   background-color: forestgreen;
   color: white;
-  font-size: clamp(1rem, 1.1vw, 2rem);
+  font-size: clamp(1rem, 1.1vw, 3rem);
   padding: 10px;
   border-radius: 10px;
 }
@@ -304,6 +338,7 @@ nav .nav-menu .nav-link a:hover {
   color: #000;
   text-align: left;
   font-weight: bold;
+  font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 .accordion .card-header .btn-link::after {
   content: "−";
@@ -470,6 +505,14 @@ nav .nav-menu .nav-link a:hover {
     flex-direction: column;
     top: 30%;
     bottom: 10%;
+    transform: translate(-50%, -17%);
+  }
+}
+@media only screen and (max-width: 920px) and (orientation: landscape) {
+  .gallery_popup-nav {
+    flex-direction: row;
+    top: 45%;
+    bottom: 32%;
     transform: translate(-50%, -17%);
   }
 }

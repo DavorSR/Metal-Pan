@@ -31,6 +31,9 @@
         @include tablet {
             padding-bottom: 3vh;
         }
+        @include wide {
+            font-size: 4rem;
+        }
     }
 
     a {
@@ -49,5 +52,8 @@
         @include eXSmall {
             margin-bottom: 3vh;
         }
+        // @include wide {
+        // font-size: 3rem;
+        //  }
     }
 }

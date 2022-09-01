@@ -20,6 +20,9 @@ nav {
             @include eXSmall {
                 font-size: 0.8em;
             }
+            @include landscape {
+                font-size: 0.8em;
+            }
         }
 
         span {
