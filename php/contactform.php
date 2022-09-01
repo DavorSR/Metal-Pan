@@ -1,19 +1,18 @@
 <?php
 
-if(isset($_POST['submit']){
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['email'];
-    $message = $_POST['message'];
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+$name = $_POST['name'];
+$subject = $_POST['subject'];
+$mailFrom = $_POST['email'];
+$mailTo = 'dusan@metal-pan.rs';
+$message = $_POST['message'];
+$headers = "From:" . $mailFrom;
+if(mail($mailTo,$subject,$message, $headers)) {
+    echo "The email message was sent.";
+} else {
+    echo "The email message was not sent.";
+}
 
-
-    $mailTo = 'davor1012@gmail.com';
-    $headers = "From: ".$mailFrom;
-    $txt = "Dobili ste email od: ".$name.".\n\n".$message;
-
-
-    mail($mailTo, $subject, $txt, $headers) or die("Error!");
-    
-    header("Location: index.php?mailsend")
-})
 ?>
+
