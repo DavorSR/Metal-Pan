@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .load {
@@ -64,7 +63,6 @@ nav .nav-menu {
   list-style: none;
   width: 100%;
   padding: 0 25px;
-  margin: 0;
 }
 @media (max-width: 505px) {
   nav .nav-menu {
@@ -76,10 +74,9 @@ nav .nav-menu {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    z-index: 1000;
   }
   nav .nav-menu.active {
-    left: 0;
+    left: 0px;
   }
 }
 nav .nav-menu .nav-link {
@@ -135,7 +132,6 @@ nav .nav-menu .nav-link a:hover {
   position: relative;
   text-align: left;
   color: white;
-  margin-top: 25px;
 }
 @media only screen and (max-width: 920px) and (orientation: landscape) {
   .bg-image {
