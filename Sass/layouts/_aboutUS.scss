@@ -9,6 +9,9 @@
     h2 {
         padding-top: 40px;
         text-align: center;
+        @include eXSmall{
+            font-size: 24px;
+        }   
     }
 
     .whyUS {
@@ -20,8 +23,13 @@
         padding: 1vh 10%;
         text-align: left;
         font-size: $basicParagraf;
+       
+    }
+
+    .text{
+        font-size: 20px;
         @include eXSmall{
-            text-align: justify;
+            font-size: 14px;
         }
     }
 }

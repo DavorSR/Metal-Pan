@@ -12,7 +12,7 @@
 
 .container-xxl {
     margin: 0 100px;
-    @include eXSmall{
+    @include eXSmall {
         margin: 0;
     }
 }
@@ -41,16 +41,11 @@
         transition: 0.2s ease-in;
     }
 
-    .card-text {
-        padding-bottom: 20px;
-        @include wide{
-            font-size: 2.5rem;
-        }
-    }
-
     .card-body p {
-        @include landscape {
-            font-size: 1.5rem;
+        font-size: 19px;
+
+        @include wide {
+            font-size: 40px;
         }
     }
 }
@@ -59,7 +54,7 @@
     position: absolute;
     bottom: 4%;
     left: 4%;
-    @include wide{
+    @include wide {
         font-size: 3rem;
     }
 }

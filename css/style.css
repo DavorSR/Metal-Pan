@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .load {
@@ -30,12 +31,13 @@ nav {
   align-items: center;
 }
 nav .logo {
-  padding: 2vh 0;
+  padding: 1vh 0;
   width: 35%;
   text-align: center;
   color: white;
 }
 nav .logo a {
+  font-weight: bold;
   color: white;
 }
 @media (max-width: 505px) {
@@ -61,7 +63,7 @@ nav .nav-menu {
   justify-content: flex-end;
   list-style: none;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 0;
 }
 @media (max-width: 505px) {
@@ -69,7 +71,6 @@ nav .nav-menu {
     position: fixed;
     left: -100%;
     top: 60px;
-    gap: 0;
     flex-direction: column;
     background: #282222;
     width: 100%;
@@ -93,6 +94,7 @@ nav .nav-menu .nav-link {
 nav .nav-menu .nav-link a {
   color: white;
   text-decoration: none;
+  font-size: 19px;
 }
 nav .nav-menu .nav-link a:hover {
   color: forestgreen;
@@ -154,19 +156,20 @@ nav .nav-menu .nav-link a:hover {
   color: white;
 }
 .d-flex div .mb-3 {
-  font-size: clamp(1rem, 1.8vw, 3rem);
+  font-size: clamp(1rem, 1.8vw, 30px);
 }
 .d-flex div .mb-4 {
-  font-size: clamp(1.5rem, 4vw, 10rem);
+  font-size: clamp(1.5rem, 4vw, 150px);
+  font-weight: bold;
 }
 .d-flex div .mb-4 span {
   color: forestgreen;
 }
 .d-flex div .moto {
-  font-size: clamp(1.1rem, 2vw, 4rem);
+  font-size: clamp(1.1rem, 2vw, 40px);
 }
 .d-flex div .mission {
-  font-size: clamp(1rem, 1.8vw, 3rem);
+  font-size: clamp(1rem, 1.8vw, 30px);
   font-style: italic;
   padding: 0.5rem 0 3rem 0;
 }
@@ -194,7 +197,7 @@ nav .nav-menu .nav-link a:hover {
   border-bottom: 2px solid forestgreen;
   width: fit-content;
   margin: 0 auto 40px auto;
-  font-size: clamp(1.1rem, 2vw, 4rem);
+  font-size: clamp(1.1rem, 2vw, 40px);
 }
 .title span {
   color: forestgreen;
@@ -232,17 +235,12 @@ nav .nav-menu .nav-link a:hover {
   color: white;
   transition: 0.2s ease-in;
 }
-.box .card-text {
-  padding-bottom: 20px;
+.box .card-body p {
+  font-size: 19px;
 }
 @media (min-width: 2160px) {
-  .box .card-text {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (max-width: 920px) and (orientation: landscape) {
   .box .card-body p {
-    font-size: 1.5rem;
+    font-size: 40px;
   }
 }
 
@@ -286,7 +284,7 @@ nav .nav-menu .nav-link a:hover {
   }
 }
 .consulting h2 {
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
   color: white;
 }
 @media (max-width: 505px) {
@@ -331,7 +329,6 @@ nav .nav-menu .nav-link a:hover {
   box-shadow: 0 2px 20px 0 rgba(110, 130, 208, 0.3);
   border: none !important;
   margin-top: 30px;
-  font-size: clamp(1em, 1.5vw, 2rem);
 }
 .accordion .card-header {
   background-color: transparent;
@@ -343,7 +340,7 @@ nav .nav-menu .nav-link a:hover {
   color: #000;
   text-align: left;
   font-weight: bold;
-  font-size: clamp(0.8rem, 1.3vw, 3rem);
+  font-size: clamp(1rem, 1.3vw, 20px);
 }
 .accordion .card-header .btn-link::after {
   content: "−";
@@ -372,6 +369,12 @@ nav .nav-menu .nav-link a:hover {
 }
 .accordion .card-body {
   background-color: #add8e6;
+  font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px), (orientation: portrait) {
+  .accordion .card-body {
+    font-size: 15px;
+  }
 }
 
 .accordianIMG {
@@ -391,19 +394,27 @@ nav .nav-menu .nav-link a:hover {
   padding-top: 40px;
   text-align: center;
 }
+@media (max-width: 505px) {
+  .aboutUS h2 {
+    font-size: 24px;
+  }
+}
 .aboutUS .whyUS {
-  font-size: clamp(1rem, 1.8vw, 3rem);
+  font-size: clamp(1rem, 1.8vw, 30px);
   padding-top: 30px;
   text-align: center;
 }
 .aboutUS p {
   padding: 1vh 10%;
   text-align: left;
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
+}
+.aboutUS .text {
+  font-size: 20px;
 }
 @media (max-width: 505px) {
-  .aboutUS p {
-    text-align: justify;
+  .aboutUS .text {
+    font-size: 14px;
   }
 }
 
@@ -421,11 +432,11 @@ nav .nav-menu .nav-link a:hover {
   }
 }
 .gallery_comment h3 {
-  font-size: clamp(1rem, 1.8vw, 3rem);
+  font-size: clamp(1rem, 1.8vw, 30px);
   padding-bottom: 2vh;
 }
 .gallery_comment p {
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
 }
 .gallery_images {
   justify-content: center;
@@ -547,10 +558,10 @@ nav .nav-menu .nav-link a:hover {
   padding: 0 5vh;
 }
 .contact h2 {
-  font-size: clamp(1.1rem, 2vw, 4rem);
+  font-size: clamp(1.1rem, 2vw, 40px);
 }
 .contact p {
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
   padding: 3vh 0;
 }
 
@@ -588,13 +599,13 @@ nav .nav-menu .nav-link a:hover {
   padding: 1.5vh;
   margin: 1vh;
   outline: none;
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
 }
 .contact_field form textarea {
   margin: 1vh;
   padding: 1.5vh;
   outline: none;
-  font-size: clamp(1em, 1.5vw, 2rem);
+  font-size: clamp(14px, 1.5vw, 19px);
 }
 .contact_field form .submit {
   width: 50%;
@@ -620,7 +631,7 @@ nav .nav-menu .nav-link a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: clamp(0.7rem, 1.1vw, 2.5rem);
+  font-size: clamp(0.7rem, 1.1vw, 14px);
   font-weight: 900;
   color: gray;
 }
