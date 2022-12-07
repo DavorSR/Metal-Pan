@@ -63,6 +63,7 @@ nav .nav-menu {
   list-style: none;
   width: 100%;
   padding: 0 25px;
+  padding-top: 14px;
 }
 @media (max-width: 505px) {
   nav .nav-menu {
